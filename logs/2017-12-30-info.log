@@ -1,0 +1,299 @@
+2017-12-30T22:33:06.489Z - info: The db instance from campaigns.json is :[object Object],[object Object],[object Object]
+2017-12-30T22:34:20.495Z - info: The db instance from campaigns.json is :[{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T22:34:29.474Z - info: About to handle user_id: 3
+2017-12-30T22:34:29.475Z - info: NUM OF TOTAL CALLS : 1
+2017-12-30T22:34:29.475Z - info: This is the first time user_id:3 is calling this API
+2017-12-30T22:34:29.476Z - info: Success Message and variables: [object Object],[object Object],[object Object]
+2017-12-30T22:41:52.903Z - info: The db instance from campaigns.json is :[{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T22:42:03.769Z - info: About to handle user_id: 3
+2017-12-30T22:42:03.770Z - info: NUM OF TOTAL CALLS : 1
+2017-12-30T22:42:03.770Z - info: This is the first time user_id:3 is calling this API
+2017-12-30T22:42:03.771Z - info: Success Message and variables: [{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T22:44:10.260Z - info: The db instance from campaigns.json is :[{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T22:44:13.783Z - info: ######### New API CALL for user_id: 3 ######### New API CALL for user_id:
+2017-12-30T22:44:13.785Z - info: About to handle user_id: 3
+2017-12-30T22:44:13.785Z - info: NUM OF TOTAL CALLS : 1
+2017-12-30T22:44:13.786Z - info: This is the first time user_id:3 is calling this API
+2017-12-30T22:44:13.786Z - info: Success Message and variables: [{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T22:44:38.561Z - info: ######### New API CALL for user_id: 3 ######### New API CALL for user_id:
+2017-12-30T22:44:38.562Z - info: About to handle user_id: 3
+2017-12-30T22:44:38.562Z - info: NUM OF TOTAL CALLS : 2
+2017-12-30T22:44:38.563Z - info: Success Message and variables: [{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T22:45:11.003Z - info: ######### New API CALL for user_id: 3g ######### New API CALL for user_id:
+2017-12-30T22:45:11.004Z - error: Bad Request with, user_id is not numeric: 3g
+2017-12-30T22:45:11.006Z - info: About to handle user_id: 3g
+2017-12-30T22:45:11.007Z - info: NUM OF TOTAL CALLS : 3
+2017-12-30T22:45:11.007Z - info: This is the first time user_id:3g is calling this API
+2017-12-30T22:45:11.008Z - info: Success Message and variables: [{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T22:45:11.011Z - error: Something broke!: Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:344:11)
+    at ServerResponse.header (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.send (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\response.js:256:15)
+    at ServerResponse.send (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\response.js:158:21)
+    at C:\Ben\WalkMe\campaign_manager\routes\api.js:28:13
+    at Layer.handle [as handle_request] (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\router\layer.js:95:5)
+2017-12-30T22:49:04.291Z - info: ######### New API CALL for user_id: 3gs ######### New API CALL for user_id:
+2017-12-30T22:49:04.292Z - error: Bad Request with, user_id is not numeric: 3gs
+2017-12-30T22:49:04.295Z - info: About to handle user_id: 3gs
+2017-12-30T22:49:04.295Z - info: NUM OF TOTAL CALLS : 4
+2017-12-30T22:49:04.296Z - info: This is the first time user_id:3gs is calling this API
+2017-12-30T22:49:04.297Z - info: Success Message and variables: [{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T22:49:04.298Z - error: Something broke!: Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:344:11)
+    at ServerResponse.header (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.send (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\response.js:256:15)
+    at ServerResponse.send (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\response.js:158:21)
+    at C:\Ben\WalkMe\campaign_manager\routes\api.js:28:13
+    at Layer.handle [as handle_request] (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\router\layer.js:95:5)
+2017-12-30T23:04:37.824Z - info: The db instance from campaigns.json is :[{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T23:14:38.808Z - info: The db instance from campaigns.json is :[{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T23:14:57.482Z - info: The db instance from campaigns.json is :[{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T23:14:57.487Z - info: About to handle user_id: 1
+2017-12-30T23:14:57.488Z - info: NUM OF TOTAL CALLS : 1
+2017-12-30T23:14:57.488Z - info: This is the first time user_id:1 is calling this API
+2017-12-30T23:14:57.488Z - info: About to handle user_id: 1
+2017-12-30T23:14:57.488Z - info: NUM OF TOTAL CALLS : 2
+2017-12-30T23:14:57.489Z - info: About to handle user_id: 1
+2017-12-30T23:14:57.489Z - info: NUM OF TOTAL CALLS : 3
+2017-12-30T23:14:57.489Z - info: About to handle user_id: 1
+2017-12-30T23:14:57.489Z - info: NUM OF TOTAL CALLS : 4
+2017-12-30T23:14:58.152Z - info: The db instance from campaigns.json is :[{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T23:16:26.791Z - info: The db instance from campaigns.json is :[{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T23:16:26.796Z - info: About to handle user_id: 1
+2017-12-30T23:16:26.796Z - info: NUM OF TOTAL CALLS : 1
+2017-12-30T23:16:26.796Z - info: This is the first time user_id:1 is calling this API
+2017-12-30T23:16:26.797Z - info: About to handle user_id: 1
+2017-12-30T23:16:26.797Z - info: NUM OF TOTAL CALLS : 2
+2017-12-30T23:16:26.797Z - info: About to handle user_id: 1
+2017-12-30T23:16:26.797Z - info: NUM OF TOTAL CALLS : 3
+2017-12-30T23:16:26.798Z - info: About to handle user_id: 1
+2017-12-30T23:16:26.798Z - info: NUM OF TOTAL CALLS : 4
+2017-12-30T23:16:26.804Z - info: About to handle user_id: 1
+2017-12-30T23:16:26.804Z - info: NUM OF TOTAL CALLS : 5
+2017-12-30T23:16:26.804Z - info: About to handle user_id: 1
+2017-12-30T23:16:26.804Z - info: NUM OF TOTAL CALLS : 6
+2017-12-30T23:16:26.804Z - info: About to handle user_id: 1
+2017-12-30T23:16:26.804Z - info: NUM OF TOTAL CALLS : 7
+2017-12-30T23:16:26.805Z - info: About to handle user_id: 1
+2017-12-30T23:16:26.805Z - info: NUM OF TOTAL CALLS : 8
+2017-12-30T23:16:27.421Z - info: The db instance from campaigns.json is :[{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T23:17:38.411Z - info: The db instance from campaigns.json is :[{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T23:17:38.416Z - info: About to handle user_id: 1
+2017-12-30T23:17:38.416Z - info: NUM OF TOTAL CALLS : 1
+2017-12-30T23:17:38.416Z - info: This is the first time user_id:1 is calling this API
+2017-12-30T23:17:38.417Z - info: About to handle user_id: 1
+2017-12-30T23:17:38.417Z - info: NUM OF TOTAL CALLS : 2
+2017-12-30T23:17:38.417Z - info: About to handle user_id: 1
+2017-12-30T23:17:38.417Z - info: NUM OF TOTAL CALLS : 3
+2017-12-30T23:17:38.417Z - info: About to handle user_id: 1
+2017-12-30T23:17:38.417Z - info: NUM OF TOTAL CALLS : 4
+2017-12-30T23:17:38.426Z - info: About to handle user_id: 1
+2017-12-30T23:17:38.427Z - info: NUM OF TOTAL CALLS : 5
+2017-12-30T23:17:38.428Z - info: About to handle user_id: 1
+2017-12-30T23:17:38.428Z - info: NUM OF TOTAL CALLS : 6
+2017-12-30T23:17:38.428Z - info: About to handle user_id: 1
+2017-12-30T23:17:38.428Z - info: NUM OF TOTAL CALLS : 7
+2017-12-30T23:17:38.430Z - info: About to handle user_id: 1
+2017-12-30T23:17:38.430Z - info: NUM OF TOTAL CALLS : 8
+2017-12-30T23:17:38.431Z - info: About to handle user_id: 2
+2017-12-30T23:17:38.432Z - info: NUM OF TOTAL CALLS : 9
+2017-12-30T23:17:38.432Z - info: This is the first time user_id:2 is calling this API
+2017-12-30T23:17:38.433Z - info: About to handle user_id: 2
+2017-12-30T23:17:38.433Z - info: NUM OF TOTAL CALLS : 10
+2017-12-30T23:17:38.433Z - info: About to handle user_id: 2
+2017-12-30T23:17:38.434Z - info: NUM OF TOTAL CALLS : 11
+2017-12-30T23:17:38.434Z - info: About to handle user_id: 2
+2017-12-30T23:17:38.434Z - info: NUM OF TOTAL CALLS : 12
+2017-12-30T23:17:38.434Z - info: About to handle user_id: 2
+2017-12-30T23:17:38.434Z - info: NUM OF TOTAL CALLS : 13
+2017-12-30T23:17:38.435Z - info: About to handle user_id: 2
+2017-12-30T23:17:38.435Z - info: NUM OF TOTAL CALLS : 14
+2017-12-30T23:17:38.435Z - info: About to handle user_id: 2
+2017-12-30T23:17:38.436Z - info: NUM OF TOTAL CALLS : 15
+2017-12-30T23:17:38.436Z - info: About to handle user_id: 2
+2017-12-30T23:17:38.436Z - info: NUM OF TOTAL CALLS : 16
+2017-12-30T23:17:38.436Z - info: About to handle user_id: 2
+2017-12-30T23:17:38.437Z - info: NUM OF TOTAL CALLS : 17
+2017-12-30T23:17:38.437Z - info: About to handle user_id: 2
+2017-12-30T23:17:38.437Z - info: NUM OF TOTAL CALLS : 18
+2017-12-30T23:17:38.437Z - info: About to handle user_id: 2
+2017-12-30T23:17:38.437Z - info: NUM OF TOTAL CALLS : 19
+2017-12-30T23:17:39.088Z - info: The db instance from campaigns.json is :[{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T23:18:23.236Z - info: The db instance from campaigns.json is :[{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T23:18:23.240Z - info: About to handle user_id: 1
+2017-12-30T23:18:23.240Z - info: NUM OF TOTAL CALLS : 1
+2017-12-30T23:18:23.240Z - info: This is the first time user_id:1 is calling this API
+2017-12-30T23:18:23.241Z - info: About to handle user_id: 1
+2017-12-30T23:18:23.241Z - info: NUM OF TOTAL CALLS : 2
+2017-12-30T23:18:23.241Z - info: About to handle user_id: 1
+2017-12-30T23:18:23.241Z - info: NUM OF TOTAL CALLS : 3
+2017-12-30T23:18:23.242Z - info: About to handle user_id: 1
+2017-12-30T23:18:23.242Z - info: NUM OF TOTAL CALLS : 4
+2017-12-30T23:18:23.249Z - info: About to handle user_id: 1
+2017-12-30T23:18:23.249Z - info: NUM OF TOTAL CALLS : 5
+2017-12-30T23:18:23.249Z - info: About to handle user_id: 1
+2017-12-30T23:18:23.249Z - info: NUM OF TOTAL CALLS : 6
+2017-12-30T23:18:23.249Z - info: About to handle user_id: 1
+2017-12-30T23:18:23.250Z - info: NUM OF TOTAL CALLS : 7
+2017-12-30T23:18:23.250Z - info: About to handle user_id: 1
+2017-12-30T23:18:23.250Z - info: NUM OF TOTAL CALLS : 8
+2017-12-30T23:18:23.252Z - info: About to handle user_id: 2
+2017-12-30T23:18:23.252Z - info: NUM OF TOTAL CALLS : 9
+2017-12-30T23:18:23.252Z - info: This is the first time user_id:2 is calling this API
+2017-12-30T23:18:23.253Z - info: About to handle user_id: 2
+2017-12-30T23:18:23.253Z - info: NUM OF TOTAL CALLS : 10
+2017-12-30T23:18:23.253Z - info: About to handle user_id: 2
+2017-12-30T23:18:23.254Z - info: NUM OF TOTAL CALLS : 11
+2017-12-30T23:18:23.254Z - info: About to handle user_id: 2
+2017-12-30T23:18:23.254Z - info: NUM OF TOTAL CALLS : 12
+2017-12-30T23:18:23.255Z - info: About to handle user_id: 2
+2017-12-30T23:18:23.255Z - info: NUM OF TOTAL CALLS : 13
+2017-12-30T23:18:23.255Z - info: About to handle user_id: 2
+2017-12-30T23:18:23.255Z - info: NUM OF TOTAL CALLS : 14
+2017-12-30T23:18:23.255Z - info: About to handle user_id: 2
+2017-12-30T23:18:23.256Z - info: NUM OF TOTAL CALLS : 15
+2017-12-30T23:18:23.256Z - info: About to handle user_id: 2
+2017-12-30T23:18:23.256Z - info: NUM OF TOTAL CALLS : 16
+2017-12-30T23:18:23.256Z - info: About to handle user_id: 2
+2017-12-30T23:18:23.257Z - info: NUM OF TOTAL CALLS : 17
+2017-12-30T23:18:23.257Z - info: About to handle user_id: 2
+2017-12-30T23:18:23.257Z - info: NUM OF TOTAL CALLS : 18
+2017-12-30T23:18:23.257Z - info: About to handle user_id: 2
+2017-12-30T23:18:23.258Z - info: NUM OF TOTAL CALLS : 19
+2017-12-30T23:18:24.353Z - info: The db instance from campaigns.json is :[{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T23:23:56.977Z - info: The db instance from campaigns.json is :[{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T23:23:56.986Z - info: About to handle user_id: 1
+2017-12-30T23:23:56.986Z - info: NUM OF TOTAL CALLS : 1
+2017-12-30T23:23:56.987Z - info: This is the first time user_id:1 is calling this API
+2017-12-30T23:23:56.987Z - info: About to handle user_id: 1
+2017-12-30T23:23:56.987Z - info: NUM OF TOTAL CALLS : 2
+2017-12-30T23:23:56.988Z - info: About to handle user_id: 1
+2017-12-30T23:23:56.988Z - info: NUM OF TOTAL CALLS : 3
+2017-12-30T23:23:56.988Z - info: About to handle user_id: 1
+2017-12-30T23:23:56.988Z - info: NUM OF TOTAL CALLS : 4
+2017-12-30T23:23:56.995Z - info: About to handle user_id: 1
+2017-12-30T23:23:56.995Z - info: NUM OF TOTAL CALLS : 5
+2017-12-30T23:23:56.995Z - info: About to handle user_id: 1
+2017-12-30T23:23:56.995Z - info: NUM OF TOTAL CALLS : 6
+2017-12-30T23:23:56.995Z - info: About to handle user_id: 1
+2017-12-30T23:23:56.995Z - info: NUM OF TOTAL CALLS : 7
+2017-12-30T23:23:56.995Z - info: About to handle user_id: 1
+2017-12-30T23:23:56.996Z - info: NUM OF TOTAL CALLS : 8
+2017-12-30T23:23:56.997Z - info: About to handle user_id: 2
+2017-12-30T23:23:56.997Z - info: NUM OF TOTAL CALLS : 9
+2017-12-30T23:23:56.997Z - info: This is the first time user_id:2 is calling this API
+2017-12-30T23:23:56.997Z - info: About to handle user_id: 2
+2017-12-30T23:23:56.997Z - info: NUM OF TOTAL CALLS : 10
+2017-12-30T23:23:56.998Z - info: About to handle user_id: 2
+2017-12-30T23:23:56.998Z - info: NUM OF TOTAL CALLS : 11
+2017-12-30T23:23:56.998Z - info: About to handle user_id: 2
+2017-12-30T23:23:56.998Z - info: NUM OF TOTAL CALLS : 12
+2017-12-30T23:23:56.999Z - info: About to handle user_id: 2
+2017-12-30T23:23:56.999Z - info: NUM OF TOTAL CALLS : 13
+2017-12-30T23:23:56.999Z - info: About to handle user_id: 2
+2017-12-30T23:23:56.999Z - info: NUM OF TOTAL CALLS : 14
+2017-12-30T23:23:56.999Z - info: About to handle user_id: 2
+2017-12-30T23:23:56.999Z - info: NUM OF TOTAL CALLS : 15
+2017-12-30T23:23:56.999Z - info: About to handle user_id: 2
+2017-12-30T23:23:57.000Z - info: NUM OF TOTAL CALLS : 16
+2017-12-30T23:23:57.000Z - info: About to handle user_id: 2
+2017-12-30T23:23:57.000Z - info: NUM OF TOTAL CALLS : 17
+2017-12-30T23:23:57.000Z - info: About to handle user_id: 2
+2017-12-30T23:23:57.000Z - info: NUM OF TOTAL CALLS : 18
+2017-12-30T23:23:57.001Z - info: About to handle user_id: 2
+2017-12-30T23:23:57.001Z - info: NUM OF TOTAL CALLS : 19
+2017-12-30T23:23:58.031Z - info: The db instance from campaigns.json is :[{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T23:27:01.628Z - info: The db instance from campaigns.json is :[{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T23:27:01.634Z - info: About to handle user_id: 1
+2017-12-30T23:27:01.634Z - info: NUM OF TOTAL CALLS : 1
+2017-12-30T23:27:01.635Z - info: This is the first time user_id:1 is calling this API
+2017-12-30T23:27:01.635Z - info: About to handle user_id: 1
+2017-12-30T23:27:01.636Z - info: NUM OF TOTAL CALLS : 2
+2017-12-30T23:27:01.636Z - info: About to handle user_id: 1
+2017-12-30T23:27:01.636Z - info: NUM OF TOTAL CALLS : 3
+2017-12-30T23:27:01.636Z - info: About to handle user_id: 1
+2017-12-30T23:27:01.636Z - info: NUM OF TOTAL CALLS : 4
+2017-12-30T23:27:01.643Z - info: About to handle user_id: 1
+2017-12-30T23:27:01.643Z - info: NUM OF TOTAL CALLS : 5
+2017-12-30T23:27:01.644Z - info: About to handle user_id: 1
+2017-12-30T23:27:01.644Z - info: NUM OF TOTAL CALLS : 6
+2017-12-30T23:27:01.644Z - info: About to handle user_id: 1
+2017-12-30T23:27:01.644Z - info: NUM OF TOTAL CALLS : 7
+2017-12-30T23:27:01.645Z - info: About to handle user_id: 1
+2017-12-30T23:27:01.645Z - info: NUM OF TOTAL CALLS : 8
+2017-12-30T23:27:01.646Z - info: About to handle user_id: 2
+2017-12-30T23:27:01.646Z - info: NUM OF TOTAL CALLS : 9
+2017-12-30T23:27:01.646Z - info: This is the first time user_id:2 is calling this API
+2017-12-30T23:27:01.646Z - info: About to handle user_id: 2
+2017-12-30T23:27:01.647Z - info: NUM OF TOTAL CALLS : 10
+2017-12-30T23:27:01.647Z - info: About to handle user_id: 2
+2017-12-30T23:27:01.647Z - info: NUM OF TOTAL CALLS : 11
+2017-12-30T23:27:01.647Z - info: About to handle user_id: 2
+2017-12-30T23:27:01.647Z - info: NUM OF TOTAL CALLS : 12
+2017-12-30T23:27:01.647Z - info: About to handle user_id: 2
+2017-12-30T23:27:01.647Z - info: NUM OF TOTAL CALLS : 13
+2017-12-30T23:27:01.648Z - info: About to handle user_id: 2
+2017-12-30T23:27:01.648Z - info: NUM OF TOTAL CALLS : 14
+2017-12-30T23:27:01.648Z - info: About to handle user_id: 2
+2017-12-30T23:27:01.648Z - info: NUM OF TOTAL CALLS : 15
+2017-12-30T23:27:01.648Z - info: About to handle user_id: 2
+2017-12-30T23:27:01.648Z - info: NUM OF TOTAL CALLS : 16
+2017-12-30T23:27:01.648Z - info: About to handle user_id: 2
+2017-12-30T23:27:01.649Z - info: NUM OF TOTAL CALLS : 17
+2017-12-30T23:27:01.649Z - info: About to handle user_id: 2
+2017-12-30T23:27:01.649Z - info: NUM OF TOTAL CALLS : 18
+2017-12-30T23:27:01.649Z - info: About to handle user_id: 2
+2017-12-30T23:27:01.650Z - info: NUM OF TOTAL CALLS : 19
+2017-12-30T23:27:02.640Z - info: The db instance from campaigns.json is :[{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T23:32:07.010Z - info: The db instance from campaigns.json is :[{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T23:32:27.449Z - info: The db instance from campaigns.json is :[{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T23:32:51.409Z - info: ######### New API CALL for user_id: 3gs #########
+2017-12-30T23:34:35.803Z - info: The db instance from campaigns.json is :[{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T23:34:40.404Z - info: ######### New API CALL for user_id: 3gs #########
+2017-12-30T23:34:40.405Z - error: Bad Request with, user_id is not numeric: 3gs
+2017-12-30T23:34:40.413Z - info: About to handle user_id: 3gs
+2017-12-30T23:34:40.413Z - info: NUM OF TOTAL CALLS : 1
+2017-12-30T23:34:40.413Z - info: This is the first time user_id:3gs is calling this API
+2017-12-30T23:34:40.414Z - info: Success Message and variables: [{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T23:34:40.417Z - error: Something broke!: Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:344:11)
+    at ServerResponse.header (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\response.js:730:10)
+    at ServerResponse.send (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\response.js:170:12)
+    at ServerResponse.json (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\response.js:256:15)
+    at ServerResponse.send (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\response.js:158:21)
+    at C:\Ben\WalkMe\campaign_manager\routes\api.js:28:13
+    at Layer.handle [as handle_request] (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Ben\WalkMe\campaign_manager\node_modules\express\lib\router\layer.js:95:5)
+2017-12-30T23:35:03.751Z - info: The db instance from campaigns.json is :[{"id":101,"name":"Holiday Specials","thresholds":{"max_total":1000,"max_per_user":10},"data":{"d1":1,"d2":2}},{"id":102,"name":"Rate this app","thresholds":{"max_per_user":3},"data":{}},{"id":103,"name":"First come first served","thresholds":{"max_total":4},"data":{}}]
+2017-12-30T23:35:05.802Z - info: ######### New API CALL for user_id: 3gs #########
+2017-12-30T23:35:05.803Z - error: Bad Request with, user_id is not numeric: 3gs
+2017-12-30T23:39:24.408Z - error: Bad file reading in campaignDAO. trace: SyntaxError: Unexpected token ,
+    at Object.parse (native)
+    at Function.CampaignDAO.init (C:\Ben\WalkMe\campaign_manager\dataRepository\campaignDAO.js:17:19)
+    at Object.<anonymous> (C:\Ben\WalkMe\campaign_manager\logic\brain.js:8:12)
+    at Module._compile (module.js:409:26)
+    at Object.Module._extensions..js (module.js:416:10)
+    at Module.load (module.js:343:32)
+    at Function.Module._load (module.js:300:12)
+    at Module.require (module.js:353:17)
+    at require (internal/module.js:12:17)
+    at Object.<anonymous> (C:\Ben\WalkMe\campaign_manager\routes\api.js:3:13)
+2017-12-30T23:39:46.346Z - info: ######### New API CALL for user_id: 3gs #########
+2017-12-30T23:39:46.346Z - error: Bad Request with, user_id is not numeric: 3gs
+2017-12-30T23:39:54.769Z - info: ######### New API CALL for user_id: 3gs #########
+2017-12-30T23:39:54.769Z - error: Bad Request with, user_id is not numeric: 3gs
+2017-12-30T23:40:02.606Z - info: ######### New API CALL for user_id: 3 #########
+2017-12-30T23:40:02.607Z - info: About to handle user_id: 3
+2017-12-30T23:40:02.608Z - info: NUM OF TOTAL CALLS : 1
+2017-12-30T23:40:02.608Z - info: This is the first time user_id:3 is calling this API
+2017-12-30T23:40:02.609Z - info: Success Message and variables: []
