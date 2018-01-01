@@ -3,7 +3,7 @@ var brain = require('../logic/campaignAPILogic');
 var http = require('http');
 var request = require('request');
 var bonusAPILogic = require('../logic/bonusAPILogic.js');
-// ******* INTEGRATION TESTS *******
+// ******* COMPO TESTS *******
 // BASED ON campaigns.json which came with this poject
 
 // thought about using node-rest-client but it was time consuming to change all the tests
@@ -18,17 +18,37 @@ var postData = {
     },
     "data":{}
 };
+//  ############# Test addCampaign ############
 bonusAPILogic.addCampaign(postData);
+//  ############# Test getCampaignModelsList ############
 tap.equal(brain.getCampaignModelsList().hasOwnProperty("105"), true);
 tap.equal(Object.keys(brain.getCampaignModelsList()).length, 4);
 
+//  ############# Test edit_campaign_name ############
 bonusAPILogic.edit_campaign_name(101,'BenzCampaign');
-console.log('brain.getCampaignModelsList()[101].campaignOriginalDetails.name = :'+brain.getCampaignModelsList()[101].campaignOriginalDetails.name);
 tap.equal(brain.getCampaignModelsList()[101].campaignOriginalDetails.name,'BenzCampaign');
 
+//  ############# Test deleteCampaign ############
 bonusAPILogic.deleteCampaign(105);
+// ############# Test getCampaignModelsList ############
 tap.equal(brain.getCampaignModelsList().hasOwnProperty("105"), false);
-
+var db = brain.getUpdatedDB();
+var indb=false;
+for(var i=0;i<db.length;i++)
+{
+    if(db[i].id ==105)
+        indb=true;
+}
+tap.equal(indb, false);
+var inUserMap =false;
+var usersMap = brain.getUsersMap();
+for(var userId in usersMap) {
+    if (usersMap.hasOwnProperty(userId)) {
+        if(usersMap[userId].hasOwnProperty(105))
+            inUserMap=true;
+    }
+}
+tap.equal(inUserMap, false);
 
 /*
 

@@ -6,6 +6,8 @@ var brain = require('../logic/campaignAPILogic.js');
 var bonusAPILogic = require('../logic/bonusAPILogic.js');
 function BonusHelper(){}
 
+// This file is created to simplify bonus.js
+
 BonusHelper.get_campagins=  function(req, res) { //http://localhost:3000/bonus/get_campagins
     successLog.info('######### New get_campagins API CALL  #########');
 
@@ -46,6 +48,12 @@ BonusHelper.add_campaign = function(req, res) { //http://localhost:3000/bonus/ad
 BonusHelper.delete_campaign = function (req,res) {
     var ans={};
     var campaign_id = req.query.campaign_id; // $_GET["campaign_id"]
+    if (!isInt(campaign_id))
+    {
+        errorLog.error('Bad Request, id is not an integer: ' + campaign_id);
+        res.send('This campaign id is not an integer');
+        return;
+    }
     successLog.info('######### New delete_campaign API CALL for campaign_id: '+campaign_id+" #########");
 
     try {
@@ -80,6 +88,12 @@ BonusHelper.edit_campaign_name = function(req,res)
     try
     {
         var campaign_id = req.query.campaign_id; // $_GET["campaign_id"]
+        if (!isInt(campaign_id))
+        {
+            errorLog.error('Bad Request, id is not an integer: ' + campaign_id);
+            res.send('This campaign id is not an integer');
+            return;
+        }
         var target_name = req.query.target_name; // $_GET["target_name"] - name souldn't be empty. it's doesn't make sense
         successLog.info('######### New edit_campaign_name API CALL with campaignId: '+campaign_id+' and name: '+target_name + ' #########');
 
@@ -106,6 +120,8 @@ BonusHelper.get_users_map = function(req,res)
     try
     {
         ans = brain.getUsersMap();
+        if(Object.keys(ans).length == 0 )
+            ans = 'The users map is empty because there were no request /api/campaigns yet';
     }
     catch (err)
     {
@@ -113,6 +129,8 @@ BonusHelper.get_users_map = function(req,res)
     }
     res.send(ans);
 }
+
+
 function isInt(value) {
     if (isNaN(value)) {
         return false;

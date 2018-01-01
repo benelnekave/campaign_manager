@@ -16,6 +16,7 @@ for( var i = 0; i<4;i++)
 
 tap.equal(returnAns.length ,2); //check per user : should be 2
 
+//  ############# Test restartExistingCampaignThresholds ############
 bonusAPILogic.restartExistingCampaignThresholds(102);
 bonusAPILogic.restartExistingCampaignThresholds(103);
 returnAns = brain.handleSingleUser(1);
@@ -38,7 +39,7 @@ for( var i = 0; i<11;i++)
 tap.equal(returnAns.length ,0);
 
 
-
+//  ############# Test getUsersMap ############
 var sizeOfUsersMap = Object.keys(brain.getUsersMap()).length;
 tap.equal(sizeOfUsersMap ,3);
 

@@ -76,23 +76,24 @@ BonusAPILogic.addCampaign = function(campaign)
 
 BonusAPILogic.deleteCampaign = function(campaignId)
 {
-    var deleted=true;
+    var deleted=false;
     var msg='CampaignId '+campaignId+' was not found and there for, not deleted!';
     for(var i=0; i<dbinstance.length; i++)
     {
         if(dbinstance[i].id == campaignId)
         {
-            dbinstance.splice(i,1); //delete from attay
-            // delete from usersDetailsStatusMap is needed as well
-            delete campaignModelsList[campaignId];
-            for(var i; i<usersDetailsStatusMap.length;i++)
-            {
-                var singleUserDetails = usersDetailsStatusMap[i];
-                if(singleUserDetails.hasOwnProperty(campaignId)) {
-                    delete singleUserDetails[campaignId];
-                    deleted=true;
-                }
-            }
+            dbinstance.splice(i,1); //delete from array
+            deleted=true;
+        }
+    }
+    // delete from usersDetailsStatusMap is needed as well
+    delete campaignModelsList[campaignId];
+    for(var j=0; j<usersDetailsStatusMap.length;j++)
+    {
+        var singleUserDetails = usersDetailsStatusMap[j];
+        if(singleUserDetails.hasOwnProperty(campaignId)) {
+            delete singleUserDetails[campaignId];
+            deleted=true;
         }
     }
     if(deleted) {
