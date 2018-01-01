@@ -10,8 +10,6 @@
 
  * @constructor
  */
-
-
 function CampaignBonusModel(){
 
     this.num_of_users_got_it = 0;

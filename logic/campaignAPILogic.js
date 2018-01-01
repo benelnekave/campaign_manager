@@ -190,5 +190,4 @@ Brain.getUpdatedDB = function()
     return dbinstance;
 }
 
-//var usersDetailsStatusMap = {}; // usersDetailsStatusMap[user_id][singleCampaign.id].max_total
 module.exports = Brain;

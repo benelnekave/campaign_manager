@@ -12,20 +12,19 @@ const debugLog = require('../util/logger').debuglog;
  *  This is the api was asked as the API ​URL.
     It was well explained in the pdf file.
  */
-router.get('/campaigns', function(req, res, next) {
+router.get('/campaigns', function(req, res) {
     try {
 
         var user_id = req.query.user_id; // $_GET["user_id"]
-        successLog.info('######### New API CALL for user_id: '+user_id+" #########");
+        successLog.info('######### New campaings API CALL for user_id: '+user_id+" #########");
         debugLog.debug('user_id '+ user_id + ' was just sent to /api/campaigns');
-        if (!Number.isInteger(parseInt(user_id))) {
+        if (!isInt(user_id)) {
             errorLog.error('Bad Request, user_id is not an integer: ' + user_id);
             res.send('This user_id is not an integer');
             return;
         }
 
         var ans = brain.handleSingleUser(user_id);
-        // winston.log('Success Message and variables:' +ans);//'apiCall succedded with ans : ' + ans);
         successLog.info('Success Message and variables: '+JSON.stringify(ans));
         res.send(ans);
 
@@ -38,6 +37,13 @@ router.get('/campaigns', function(req, res, next) {
 
 });
 
-
+//I know that's the second time I wrote this code but it is very short
+function isInt(value) {
+    if (isNaN(value)) {
+        return false;
+    }
+    var x = parseFloat(value);
+    return (x | 0) === x;
+}
 
 module.exports = router;
