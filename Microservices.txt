@@ -1,0 +1,24 @@
+Microservices:
+If I had more time...
+I would have created a load balancer, will call it hub.
+
+I would implement a health check http restfull service for each of the microservice that returns a json which will 
+expose some valuable information like: db load, application memmory, if we reached the swap memmory(on linux)
+etc... 
+I would implement round robin with it and this is how the load balancer will know to which instance it will send the request 
+and we will get a highly available application.
+With the health check, the load balancer will know if one of the severs is down/too busy and will forward the 
+request to an available microservice.
+
+* A simplier way is to implement only a round robin on the servers and this is how we will easily (but not accuratly)
+avoid application load or stack overflow (worst case scenario).
+
+Memmory sharing:
+In order to share the memmory and without hazelcast/db/anyother sharable technology, I would simply use files for the
+structures I described in the jsonsStractExample.txt file and for the db.
+Or, classier way is to keep all of the stractures in the hub and the services will consume it with http requests.
+
+
+
+As I mentioned earlier I didn't have time to do everything, I did the first bonus part.
+I hope that with what I wrote here you understand I know what to do and consider it done.

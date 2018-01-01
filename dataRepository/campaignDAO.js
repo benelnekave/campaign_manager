@@ -2,7 +2,7 @@ const errorLog = require('../util/logger').errorlog;
 const successLog = require('../util/logger').successlog;
 const debugLog = require('../util/logger').debuglog;
 
-var id2ThresholdsMap={};
+
 var db = {};
 
 function CampaignDAO(){} //empty constractor
@@ -16,7 +16,6 @@ CampaignDAO.init = function() {
         var path = require('path');
         db = JSON.parse(fs.readFileSync('dataRepository/campaigns.json', 'utf8'));
         successLog.info('The db instance from campaigns.json is :'+ JSON.stringify(db));
-        fillId2ThresholdsMap();
     }
     catch( err) {
         errorLog.error('Bad file reading in campaignDAO. trace: '+err.stack);
@@ -28,12 +27,14 @@ CampaignDAO.init = function() {
  * If one of the thresholds doesn't exist, we put 'infinity' in it's value.
  *
  */
-function fillId2ThresholdsMap() {
+CampaignDAO.fillId2ThresholdsMapAndGet=function(fromDB) {
+    var id2ThresholdsMap={};
     try {
-        for (var i = 0; i < db.length; i++) {
-            var singleCampaign = db[i];
+        for (var i = 0; i < fromDB.length; i++) {
+            var singleCampaign = fromDB[i];
 
             id2ThresholdsMap[singleCampaign.id] = {};
+            id2ThresholdsMap[singleCampaign.id].name = singleCampaign.name;
             if (singleCampaign.thresholds.hasOwnProperty('max_per_user')) {
                 id2ThresholdsMap[singleCampaign.id].max_per_user = singleCampaign.thresholds.max_per_user;
             }
@@ -52,7 +53,10 @@ function fillId2ThresholdsMap() {
     catch (err)
     {
         errorLog.error('Error while trying to fill Id2ThresholdsMap. trace:'+err.stack);
+        return id2ThresholdsMap;
     }
+    return id2ThresholdsMap;
+
 }
 
 
@@ -61,11 +65,6 @@ CampaignDAO.get_db = function()
     return db;
 }
 
-
-CampaignDAO.getId2ThresholdsMap=function()
-{
-    return id2ThresholdsMap;
-}
 
 
 

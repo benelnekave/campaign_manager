@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var brain = require('../logic/brain.js');
-var logger = require('../util/logger.js');
+var brain = require('../logic/campaignAPILogic.js');
 const errorLog = require('../util/logger').errorlog;
 const successLog = require('../util/logger').successlog;
 const debugLog = require('../util/logger').debuglog;
@@ -9,7 +8,9 @@ const debugLog = require('../util/logger').debuglog;
 
 
 /**
- * Req should consist user_id only in the GET url. example: http://localhost:3000/api/campaigns?user_id=3
+ *  Req should consider user_id param in the GET url. example: http://localhost:3000/api/campaigns?user_id=3
+ *  This is the api was asked as the API ​URL.
+    It was well explained in the pdf file.
  */
 router.get('/campaigns', function(req, res, next) {
     try {
@@ -17,9 +18,9 @@ router.get('/campaigns', function(req, res, next) {
         var user_id = req.query.user_id; // $_GET["user_id"]
         successLog.info('######### New API CALL for user_id: '+user_id+" #########");
         debugLog.debug('user_id '+ user_id + ' was just sent to /api/campaigns');
-        if (isNaN(user_id)) {
-            errorLog.error('Bad Request with, user_id is not numeric: ' + user_id);
-            res.send('This user_id is not a number');
+        if (!Number.isInteger(parseInt(user_id))) {
+            errorLog.error('Bad Request, user_id is not an integer: ' + user_id);
+            res.send('This user_id is not an integer');
             return;
         }
 

@@ -1,0 +1,146 @@
+get_users_map:  usersDetailsStatusMap json in campaignAPILogic file
+{
+    "1": {
+        "101": {
+            "name": "Holiday Specials",
+            "max_per_user": 6,
+            "max_total": 982
+        },
+        "102": {
+            "name": "Rate this app",
+            "max_per_user": -1,
+            "max_total": "infinity"
+        },
+        "103": {
+            "name": "First come first served",
+            "max_per_user": "infinity",
+            "max_total": 0
+        }
+    },
+    "2": {
+        "101": {
+            "name": "Holiday Specials",
+            "max_per_user": 6,
+            "max_total": 982
+        },
+        "102": {
+            "name": "Rate this app",
+            "max_per_user": -1,
+            "max_total": "infinity"
+        },
+        "103": {
+            "name": "First come first served",
+            "max_per_user": "infinity",
+            "max_total": 0
+        }
+    },
+    "3": {
+        "101": {
+            "name": "Holiday Specials",
+            "max_per_user": -1,
+            "max_total": 981
+        },
+        "102": {
+            "name": "Rate this app",
+            "max_per_user": -8,
+            "max_total": "infinity"
+        },
+        "103": {
+            "name": "First come first served",
+            "max_per_user": "infinity",
+            "max_total": 0
+        }
+    }
+}
+
+
+get_campaigns: campaignModelsList json in campaignAPILogic file
+{
+    "101": {
+        "num_of_users_got_it": 1,
+        "num_of_per_user_reached_0": 0,
+        "total_threshold_reached": false,
+        "last_date_this_campaign_returned": "1/1/2018, 5:56:39 PM",
+        "campaignOriginalDetails": {
+            "id": 101,
+            "name": "Holiday Specials",
+            "thresholds": {
+                "max_total": 1000,
+                "max_per_user": 10
+            },
+            "data": {}
+        },
+        "usersDetailsStatusMap": {
+            "id": 101,
+            "name": "Holiday Specials",
+            "thresholds": {
+                "max_total": 1000,
+                "max_per_user": 10
+            },
+            "data": {}
+        }
+    },
+    "102": {
+        "num_of_users_got_it": 1,
+        "num_of_per_user_reached_0": 0,
+        "total_threshold_reached": false,
+        "last_date_this_campaign_returned": "1/1/2018, 5:56:39 PM",
+        "campaignOriginalDetails": {
+            "id": 102,
+            "name": "Rate this app",
+            "thresholds": {
+                "max_per_user": 3
+            },
+            "data": {}
+        },
+        "usersDetailsStatusMap": {
+            "id": 102,
+            "name": "Rate this app",
+            "thresholds": {
+                "max_per_user": 3
+            },
+            "data": {}
+        }
+    },
+    "103": {
+        "num_of_users_got_it": 1,
+        "num_of_per_user_reached_0": 0,
+        "total_threshold_reached": false,
+        "last_date_this_campaign_returned": "1/1/2018, 5:56:39 PM",
+        "campaignOriginalDetails": {
+            "id": 103,
+            "name": "First come first served",
+            "thresholds": {
+                "max_total": 4
+            },
+            "data": {}
+        },
+        "usersDetailsStatusMap": {
+            "id": 103,
+            "name": "First come first served",
+            "thresholds": {
+                "max_total": 4
+            },
+            "data": {}
+        }
+    }
+}
+
+Id2ThresholdsMap:  json in campaignAPILogic file
+{
+		"101": {
+            "name": "Holiday Specials",
+            "max_per_user": -1,
+            "max_total": 981
+        },
+        "102": {
+            "name": "Rate this app",
+            "max_per_user": -8,
+            "max_total": "infinity"
+        },
+        "103": {
+            "name": "First come first served",
+            "max_per_user": "infinity",
+            "max_total": 0
+        }
+}
