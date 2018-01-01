@@ -29,10 +29,10 @@ Please follow the instractions:
 8. 	Enjoy the APIs
 
 APIs:
-	will be called with url: http://localhost:3000/
+	will be called with url:											http://localhost:3000/
 								if you are interested in changing it, please do it in the www file in bin folder
 	main:
-	/api/campaigns?user_id=123 :		
+	/api/campaigns?user_id=123 :										http://localhost:3000/api/campaigns?user_id=2
 	GET
 							This is the api was asked as the API ​URL.
 							It was well explained in the pdf file.
@@ -41,28 +41,28 @@ APIs:
 	bonus:
 	* All of the getters (APIs) return a json.
 	
-	/bonus/get_users_map :		
+	/bonus/get_users_map :												http://localhost:3000/bonus/get_users_map
 	GET
 							This request returns the updated status of each user and his thresholds.
 				
 				
-	/bonus/edit_campaign_name?campaign_id=123&target_name=moses :		
+	/bonus/edit_campaign_name?campaign_id=123&target_name=moses :		http://localhost:3000/bonus/edit_campaign_name?campaign_id=123&target_name=benz
 	GET
 							With this request you can edit campaign_id=123 and set it's target_name to moses
 	
 	
-	/bonus/restart_campaign?campaign_id=123 :
+	/bonus/restart_campaign?campaign_id=123 :							http://localhost:3000/bonus/restart_campaign?campaign_id=2
 	GET
 							With this requst you can restart campaign_id=123 thresholds
 							You can check the effect with get_users_map
 							
 							
-	/bonus/delete_campaign?campaign_id=123
+	/bonus/delete_campaign?campaign_id=123								http://localhost:3000/bonus/delete_campaign?campaign_id=11
 	GET
 							Simply as it sounds
 	
 	
-	/bonus/get_campagins
+	/bonus/get_campagins 												http://localhost:3000/bonus/get_campagins
 	GET			
 							This request will return the campaignModelList which holds some back office
 							information on each campaign:
@@ -73,7 +73,7 @@ APIs:
 							campaignOriginalDetails
 							
 							
-	/bonus/add_campaign : 
+	/bonus/add_campaign : 												http://localhost:3000/bonus/add_campaign
 	POST	
 		json with the well known stracture should be in the req.body
 		id should be an integer as requested in the spec (double will return an error msg).
@@ -110,7 +110,7 @@ Important notes:
 	first letter and lowecase camelCase for functions.
 	
 	
-	I tested the api with post-man which is equvilent to curl.
+	I tested the api with post-man which is equvilent to curl. curl -X GET 'http://localhost:3000/
 	
 	I hope this document is not overwhelming.
 	To best understand the objects stracture, I prepared an objects examples and created a UML.
