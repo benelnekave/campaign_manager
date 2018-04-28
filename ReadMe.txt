@@ -1,5 +1,4 @@
-###### Hi and welcome to WalkMe ​ ​-​ ​Mobile ​ ​Backend ​ ​Team Coding ​ ​Test ######
-
+﻿
 This project was programmed with Express-Node.js web application framework.
 Please follow the instractions:
 1. 	In cmd-windows/bash-linux shell navigate to campaign_manager folder you downloaded from github.
@@ -92,28 +91,14 @@ Important notes:
 	In order to expirence some Class as I'm used to from other languages, I created the campaignClass with a prototype.
 	campaignClass is in the bonus part.
 2. 	I used tap for testing. it's very cool and give you a lot of 'out of the box' features like test coverage
-	2.1 . I used winston for logging.
-3.	I didn't care much about memmory/runtime efficancy.
-	I know I could have used map for <id,Campaign> and get the campaigns in O(1) 
-	but it wasn't written that id is uniqe.
-4.	I didn't allow though to add with 'addCampaign request' a campaign with an existing id. 
-	I know it's the opposite of what I wrote on 3 but I wanted to implement this functionality 
-	because bonus is my section :)
-5. 	I started contact.html, about.html, index.html but I stopped after talking with you. you can find those in /views.
-	I didn't touch the pug, automaticly created, files although it seems interesting to deal with.
-6. 	I got a hard time working on the tests, I couldn't call the http requests in a function so it's a bit of a mess.
-	I coudn't call it in a particular order also so I tested the functions themselvs (like compo-test) and not the api in the 
-	Test folder. I did a lot of coding in the tests and tried to solve it in few ways but I missed something there,
-	might be with the compliation of the tests.
-	I marked out the basics of what Iv'e tried in order for you to see what I meant.
-7. 	I didn't know Node's best practice for naming so I named all of the files with camelCase. Usually I'm using capitals for classes
-	first letter and lowecase camelCase for functions.
+3.	I used winston for logging.
+
 	
 	
 	I tested the api with post-man which is equvilent to curl. curl -X GET 'http://localhost:3000/
 	
 	I hope this document is not overwhelming.
 	To best understand the objects stracture, I prepared an objects examples and created a UML.
-Thanks for the Node.js experience! It was great addicting fun!
+
 
 	
