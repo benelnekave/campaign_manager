@@ -14,7 +14,7 @@ const debugLog = require('../util/logger').debuglog;
  */
 router.get('/campaigns', function(req, res) {
     try {
-
+//for snir
         var user_id = req.query.user_id; // $_GET["user_id"]
         successLog.info('######### New campaings API CALL for user_id: '+user_id+" #########");
         debugLog.debug('user_id '+ user_id + ' was just sent to /api/campaigns');
