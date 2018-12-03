@@ -83,7 +83,6 @@ APIs:
 	
 	
 Important notes:
-* I have some 'should do's with good explanations.
 1. 	I wanted to experience both json stracture and Class stracture implementation of an object.
 	Naturally I would have created an objects which holds a db row coulumns as fields and populate it in the DAO.
 	I didn't know what is the node.js best practice for this kind of programming, json is already stractured like an object.
