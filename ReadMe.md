@@ -1,4 +1,5 @@
 ﻿
+This is my first NodeJS project, I'm a java devloper so I might have java practices and conventions along the project. 
 This project was programmed with Express-Node.js web application framework.
 Please follow the instractions:
 1. 	In cmd-windows/bash-linux shell navigate to campaign_manager folder you downloaded from github.
